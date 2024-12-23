@@ -1,21 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #55549d;
+  --foreground: #161617;
+  --governor-bay: #55549d;
+  --light-shade: #c0bfc4;
+  --granite: #696665;
+  --steel-blue: #778ea8;
+  --foreground-darker: #0a0a0a; 
+  --governor-bay-darker: #1d1d4b;
+  --font-family: 'Poppins', sans-serif; 
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+* {
+  font-family: var(--font-family) !important;
 }
 
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+.header-hero-section-wrapper {
+  background: linear-gradient(135deg, var(--foreground-darker) 0%, var(--foreground) 100%);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  color: var(--light-shade);
+  overflow: hidden;
 }
