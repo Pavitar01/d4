@@ -39,7 +39,7 @@ const Navbar = () => {
                         display: 'block',
                     }}
                 >
-                    DANCE
+                    D4NCE
                 </Typography>
 
                 <Box

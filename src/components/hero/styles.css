@@ -27,11 +27,11 @@
 }
 
 .follow-actions {
-    margin-top:26%;
+    margin-top:26% !important;
     display: flex;
 }
 .text-container-phrase{
-    margin-top: 22%;
+    margin-top: 22% !important;
 }
 
 @media (max-width: 768px) {
@@ -44,9 +44,9 @@
     .text-container {
         top: 0 !important;
         padding: 24px !important;
-        display: flex;
-        flex-direction: column;
-        gap: 0px;
+        display: flex !important;
+        flex-direction: column !important;
+        gap: 0px !important;
     }
     .text-container-phrase{
         margin-top: 0 !important;
