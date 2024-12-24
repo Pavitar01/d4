@@ -1,0 +1,130 @@
+.class-grid-container {
+  display: flex;
+  background: linear-gradient(135deg, var(--granite) 0%, var(--foreground-darker) 100%);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  width: 350px;
+  border-radius: 10px;
+  height: 200px;
+  margin-left: auto;
+  margin-right: auto;
+  align-items: center;
+  justify-content: center;
+}
+
+.course-image {
+  width: 180px;
+  height: auto;
+  border-radius: 10px;
+  position: relative;
+  left: -70px;
+  margin-top: -50px;
+  z-index: 2;
+}
+
+.class-details-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px !important;
+  border-radius: 10px;
+  width: 100%;
+  margin-right: 40px;
+}
+
+.details-title {
+  font-weight: 500 !important;
+  color: var(--light-shade);
+  letter-spacing: 1px !important;
+  min-width: max-content;
+  text-align: center;
+}
+
+.details-item {
+  font-size: 16px !important;
+  color: var(--light-shade);
+  text-align: center;
+}
+
+.class-details-wrapper .details-item:last-of-type {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+}
+
+.enroll-button {
+  padding: 5px 20px 5px 20px !important;
+  font-size: 16px !important;
+  text-transform: none !important;
+  background-color: var(--granite) !important;
+  color: var(--light-shade);
+  width: max-content !important;
+  height: auto;
+  align-self: center;
+}
+
+@media (max-width: 553px) {
+  .class-grid-container {
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .class-grid-container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 100%;
+    height: auto !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+
+  .course-image {
+    margin-top: 0px !important;
+    width: 100% !important;
+    left: 0%;
+  }
+
+  .class-details-wrapper {
+    padding: 10px !important;
+    width: 100%;
+    margin-right: 0px;
+  }
+
+  .details-title {
+    font-size: 18px !important;
+  }
+
+  .details-item {
+    font-size: 14px !important;
+  }
+
+  .enroll-button {
+    font-size: 14px !important;
+    padding: 8px 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .details-title {
+    font-size: 16px !important;
+  }
+
+  .course-image {
+    margin-top: 0px !important;
+    width: 100% !important;
+    left: 0% !important;
+  }
+
+  .details-item {
+    font-size: 12px !important;
+  }
+
+  .enroll-button {
+    font-size: 12px !important;
+    padding: 6px 12px;
+  }
+}

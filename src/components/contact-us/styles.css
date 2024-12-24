@@ -1,0 +1,116 @@
+.styled-input {
+    background-color: var(--granite) !important;
+    color: var(--light-shade) !important; 
+    border-radius: #FFFF; 
+    border: 1px solid #ccc; 
+  }
+  
+  .styled-input::placeholder {
+    color: var(--light-shade) !important; 
+    opacity: 1; 
+  }
+  
+  .styled-input:focus {
+    outline: none; 
+    border-color: var(--background) !important; 
+    box-shadow: 0 0 5px var(--background) !important;
+  }
+
+  .contact-container {
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+    background-image: url('/bg-dancer.png');
+    background-size: contain;
+    background-position: 20% 0%;
+    background-repeat: no-repeat;
+    padding: 16px;
+}
+
+.contact-info {
+    flex: 1;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 16px;
+    gap: 25px;
+}
+
+.contact-title {
+    font-weight: 300;
+    text-transform: uppercase;
+    color: var(--light-shade);
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    color: white;
+    gap: 8px;
+}
+
+.contact-form {
+    flex: 1;
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 8px;
+    color: var(--light-shade);
+}
+
+.form-title {
+    margin-bottom: 16px;
+}
+
+.styled-input {
+    font-size: 1rem;
+}
+
+.submit-button {
+    margin-top: 16px;
+    padding: 12px;
+    font-size: 1rem;
+    text-transform: none;
+    background-color: var(--background) !important;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+    .contact-container {
+        flex-direction: column;
+        height: auto;
+        background-position: center;
+        background-size: cover;
+    }
+
+    .contact-info,
+    .contact-form {
+        flex: unset;
+        padding: 16px 8px;
+    }
+
+    .contact-title {
+        text-align: center;
+    }
+
+    .contact-item {
+        justify-content: center;
+    }
+
+    .contact-form {
+        border-radius: 0;
+    }
+
+    .form-title {
+        text-align: center;
+    }
+
+    .submit-button {
+        margin-top: 12px;
+    }
+    .contact-info{
+      display: flex !important;
+    }
+}

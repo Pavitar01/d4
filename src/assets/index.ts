@@ -10,8 +10,7 @@ import Avatar2 from "./images/avatar2.png"
 import Avatar3 from "./images/avatar3.png"
 
 // bg, hero section
-import BgDancer from "./images/bg-dancer.png"
 import PurpleDancer from "./images/purple-dancer.png"
 import YellowDancer from "./images/yellow-dancer.png"
 
-export { Class1, Class2, Class3, Class4, Avatar1, Avatar2, Avatar3, BgDancer, PurpleDancer, YellowDancer } 
+export { Class1, Class2, Class3, Class4, Avatar1, Avatar2, Avatar3, PurpleDancer, YellowDancer } 

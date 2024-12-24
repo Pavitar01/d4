@@ -1,57 +1,58 @@
-.grid-container {
-    position: relative;
-    height: calc(100vh - 94px); 
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    box-sizing: border-box;
+.hero-grid-container {
+  position: relative;
+  height: calc(100vh - 94px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
 }
 
 .big-purple-image {
-    position: relative;
-    margin-top: -10%;
-    width: 70% !important;
-    max-width: 100%;
-    height: auto;
-    object-fit: cover;
-    z-index: 2;
+  position: relative;
+  margin-top: -10%;
+  width: 70% !important;
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+  z-index: 2;
 }
 
 .text-container {
-    position: relative;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    z-index: 1;
-    height: 100%;
+  position: relative;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+  height: 100%;
 }
 
 .follow-actions {
-    margin-top:26% !important;
-    display: flex;
+  margin-top: 26% !important;
+  display: flex;
 }
-.text-container-phrase{
-    margin-top: 22% !important;
+.text-container-phrase {
+  margin-top: 22% !important;
 }
 
 @media (max-width: 768px) {
-    .grid-container {
-        height: calc(100vh - 336px); 
-    }
-    .big-purple-image {
-        width: 80% !important;
-    }
-    .text-container {
-        top: 0 !important;
-        padding: 24px !important;
-        display: flex !important;
-        flex-direction: column !important;
-        gap: 0px !important;
-    }
-    .text-container-phrase{
-        margin-top: 0 !important;
-    }
-    .follow-actions {
-        margin-top:12px !important;
-    }
+  .hero-grid-container {
+    height: calc(100vh - 336px);
+  }
+  .big-purple-image {
+    width: 80% !important;
+  }
+  .text-container {
+    top: 0 !important;
+    padding: 24px !important;
+    display: flex !important;
+    margin-left: 15px !important;
+    flex-direction: column !important;
+    gap: 0px !important;
+  }
+  .text-container-phrase {
+    margin-top: 0 !important;
+  }
+  .follow-actions {
+    margin-top: 12px !important;
+  }
 }

@@ -35,7 +35,7 @@ const Navbar = () => {
                         letterSpacing: "4px",
                         flexGrow: 1,
                         marginLeft: isMobile ? "5px" : "50px",
-                        marginTop: "20px",
+                        marginTop:isMobile ? "5px" : "20px",
                         display: 'block',
                     }}
                 >
